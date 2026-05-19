@@ -4,8 +4,8 @@ pragma solidity ^0.8.13;
 import {Script} from "forge-std/Script.sol";
 import {todoList} from "../src/todo.sol";
 
-contract scriptTodoList is Script{
-    function run () external {
+contract scriptTodoList is Script {
+    function run() external {
         vm.startBroadcast();
         new todoList();
         vm.stopBroadcast();
